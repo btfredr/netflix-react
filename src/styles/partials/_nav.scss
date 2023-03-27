@@ -1,0 +1,24 @@
+.nav {
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        position: fixed;
+        left: 0;
+        width: 80px;
+        cursor: pointer;
+        object-fit: contain;
+        padding-left: 20px;
+    }
+
+    &__avatar {
+        cursor: pointer;
+        position: fixed;
+        right: 20px;
+        width: 30px;
+        height: 30px;
+    }
+}
