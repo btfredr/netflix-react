@@ -7,7 +7,7 @@ const Nav = () => {
 
   // function to make nav background black when user scrolls down the page
   const transitionNavbar = () => {
-    if (window.showY > 100) {
+    if (window.scrollY > 100) {
       handleShow(true);
     } else {
       handleShow(false);
