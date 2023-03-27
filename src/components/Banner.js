@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import bannerblack from "../assets/bannerblack.png";
 import requests from "../utils/Requests";
 import axios from "../utils/axios";
 
@@ -47,15 +46,10 @@ const Banner = () => {
           <button className="banner__button">My List</button>
         </div>
         <h1 className="banner__description">
-          {truncate(
-            `This is a test description
-            This is a test descriptionThis is a test descriptionT
-            his is a test descriptionThis is a test descriptionThis i
-            s a test descriptionThis is a test descriptionThis is a test descriptionThis is a test descriptionThis is a test descriptionThis is a test descriptionThis is a test descriptionThis is a test descriptionThis is a test descriptionThis is a test descriptionThis is a test descriptionThis is a test descriptionThis is a test descriptionThis is a test descriptionThis is a test descriptionThis is a test descriptionThis is a test descriptionThis is a test descriptionThis is a test description`,
-            150
-          )}
+          {truncate(movie?.overview, 150)}
         </h1>
       </div>
+
       <div className="banner--fadeBottom" />
     </header>
   );
