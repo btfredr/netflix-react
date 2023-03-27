@@ -4,7 +4,7 @@ import avatar from "../assets/avatar.png";
 
 const Nav = () => {
   return (
-    <div className="nav">
+    <div className="nav nav__black">
       <div className="nav__content">
         <img className="nav__logo" src={logo} alt="Netflix logo" />
         <img className="nav__avatar" src={avatar} alt="User avatar" />
