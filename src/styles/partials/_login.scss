@@ -1,0 +1,20 @@
+.login {
+    position: relative;
+    height: 100%;
+    
+
+    &__logo {
+        position: fixed;
+        left: 0;
+        width: 150px;
+        padding-left: 20px;
+        object-fit: contain;
+    }
+
+    &__button {
+        position: fixed;
+        right: 20px;
+        top: 20px;
+        padding: 10px 20px;
+    }
+}

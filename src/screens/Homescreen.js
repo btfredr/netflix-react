@@ -1,7 +1,7 @@
 import React from "react";
-import Nav from "./Nav";
-import Banner from "./Banner";
-import Row from "./Row";
+import Nav from "../components/Nav";
+import Banner from "../components/Banner";
+import Row from "../components/Row";
 import requests from "../utils/Requests";
 
 const Homescreen = () => {
