@@ -40,4 +40,14 @@
         text-align: left;
         margin-top: 30px;
     }
+
+    &__gray {
+        color: gray;
+        margin-right: 5px;
+    }
+
+    &__link:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
 }
