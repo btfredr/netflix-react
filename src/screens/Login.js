@@ -7,6 +7,8 @@ const Login = () => {
       <div className="login__background">
         <img src={logo} alt="Netflix logo" className="login__logo" />
         <button className="login__button">Sign in</button>
+
+        <div className="login__gradient"></div>
       </div>
     </div>
   );

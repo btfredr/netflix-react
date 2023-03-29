@@ -1,7 +1,9 @@
+
 .login {
     position: relative;
     height: 100%;
-    
+    background: url("../../assets/loginbg.jpg") center no-repeat;
+    background-size: cover;
 
     &__logo {
         position: fixed;
@@ -16,5 +18,15 @@
         right: 20px;
         top: 20px;
         padding: 10px 20px;
+        font-size: 1rem;
+        color: white;
+        background-color: #e50914;
+        border: none;
+    }
+
+    &__gradient {
+        width: 100%;
+        z-index: 1;
+        height: 100vh;
     }
 }
