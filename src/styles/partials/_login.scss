@@ -28,5 +28,70 @@
         width: 100%;
         z-index: 1;
         height: 100vh;
+        background: rgba(0,0,0, 0.4);
+    }
+
+    &__body {
+        z-index: 1;
+        color: white;
+        padding: 20px;
+        position: absolute;
+        top: 30%;
+        text-align: center;
+        left: 0;
+        right: 0;
+
+    }
+
+    &__body h1 {
+        font-size: 3.125rem;
+        margin-bottom: 20px;
+    }
+
+    &__body h2 {
+        font-size: 2rem;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+
+    &__body h3 {
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+
+    &__input > form > input {
+        padding: 25px;
+        outline-width: 0;
+        height: 30px;
+        width: 30%;
+        border: none;
+        max-width: 600px;
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+        border-radius: 5px;
+    }
+
+    &__input > form > input::placeholder {
+        color: white;
+    }
+
+    &__getStarted {
+        padding: 13px 20px;
+        font-size: 1rem;
+        color: white;
+        background-color:#e50914;
+        border: none;
+        text-transform: uppercase;
+        font-weight: 800;
+        margin-left: 10px;
+    }
+
+    &__getStarted:hover {
+        cursor: pointer;
+    }
+
+    &__input {
+        margin: 20px;
     }
 }
