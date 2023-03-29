@@ -24,11 +24,20 @@
         font-size: 1rem;
         color: white;
         border-radius: 5px;
+        cursor: pointer;
         background-color: #e50914;
         border: none;
+        font-weight: 600;
+        margin-top: 20px;
     }
 
-    &__form > button:hover {
-        cursor: pointer;
+    &__form > h1 {
+        text-align: left;
+        margin-bottom: 25px;
+    }
+
+    &__form > h4 {
+        text-align: left;
+        margin-top: 30px;
     }
 }
