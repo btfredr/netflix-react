@@ -15,21 +15,20 @@ const Profile = () => {
         <h1>Edit Profile</h1>
         <div className="profile__info">
           <img src={avatar} alt="User avatar" />
-        </div>
-        <div className="profile__details">
-          <h2>{user.email}</h2>
-          <div className="profile__plans">
-            <button
-              onClick={() => {
-                auth.signOut();
-              }}
-              className="profile__signout"
-            >
-              Sign Out
-            </button>
+          <div className="profile__details">
+            <h2>{user.email}</h2>
+            <div className="profile__plans">
+              <button
+                onClick={() => {
+                  auth.signOut();
+                }}
+                className="profile__signout"
+              >
+                Sign Out
+              </button>
+            </div>
           </div>
         </div>
-        llllll
       </div>
     </div>
   );

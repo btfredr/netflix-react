@@ -1,6 +1,35 @@
 .profile {
+    height: 100vh;
+    color: white;
 
     &__body {
-        
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 8%;
+        max-width: 800px;
+    }
+
+    &__info {
+        display: flex;
+    }
+
+    &__info > img {
+        height: 100px;
+    }
+
+    &__body > h1 {
+        font-size: 60px;
+        font-weight: 400;
+        border-bottom: 1px solid #282c2d;
+        margin-bottom: 20px;
+    }
+
+    &__details {
+        color: white;
+        margin-left: 25px;
+        flex: 1;
     }
 }
