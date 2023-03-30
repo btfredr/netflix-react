@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import logo from "../assets/netflix.png";
 import avatar from "../assets/avatar.png";
+import { useNavigate } from "react-router-dom";
 
 const Nav = () => {
   const [show, handleShow] = useState(false);
+  const navigate = useNavigate();
 
   // function to make nav background black when user scrolls down the page
   const transitionNavbar = () => {
@@ -23,8 +25,18 @@ const Nav = () => {
   return (
     <div className={`nav ${show && "nav__black"}`}>
       <div className="nav__content">
-        <img className="nav__logo" src={logo} alt="Netflix logo" />
-        <img className="nav__avatar" src={avatar} alt="User avatar" />
+        <img
+          onClick={() => navigate("/")}
+          className="nav__logo"
+          src={logo}
+          alt="Netflix logo"
+        />
+        <img
+          onClick={() => navigate("/profile")}
+          className="nav__avatar"
+          src={avatar}
+          alt="User avatar"
+        />
       </div>
     </div>
   );

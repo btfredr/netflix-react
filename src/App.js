@@ -5,6 +5,7 @@ import Login from "./screens/Login";
 import { auth } from "./utils/firebase";
 import { useDispatch, useSelector } from "react-redux";
 import { login, logout, selectUser } from "./features/userSlice";
+import Profile from "./screens/Profile";
 
 function App() {
   const user = useSelector(selectUser);
@@ -37,6 +38,7 @@ function App() {
         ) : (
           <Routes>
             <Route path="/" element={<Homescreen />} />
+            <Route path="/profile" element={<Profile />} />
           </Routes>
         )}
       </Router>
